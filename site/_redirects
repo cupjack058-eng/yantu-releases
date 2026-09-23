@@ -1,0 +1,3 @@
+# 安装包放在公开仓库的 Releases；发布新版本时只改这两行的版本号
+/download/windows  https://github.com/cupjack058-eng/yantu-releases/releases/download/v2.1.21/Yantu-2.1.21-win-x64.exe  302
+/download/mac      https://github.com/cupjack058-eng/yantu-releases/releases/download/v2.1.21/Yantu-2.1.21-mac-arm64.dmg  302

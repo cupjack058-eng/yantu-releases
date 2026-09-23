@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>研途 · 面向学术服务团队的 AI 工作台</title>
+    <meta
+      name="description"
+      content="研途把微信、企业微信、飞书里的咨询和本地文件整理成可追踪的任务，交给 AI 执行、由你把关，直接交付论文修订稿、申请时间线、数据看板与宣发图文。支持 Windows 与 Mac。"
+    />
+    <meta name="theme-color" content="#faf9f5" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="研途" />
+    <meta property="og:title" content="研途 · 从一条消息，到一份交付" />
+    <meta
+      property="og:description"
+      content="面向论文辅导、留学申请、科研算法与数据分析团队的本地优先 AI 工作台。"
+    />
+    <meta property="og:url" content="https://yantu.netlify.app/" />
+    <meta property="og:image" content="https://yantu.netlify.app/assets/og.png" />
+    <link rel="preload" href="/assets/fonts/yantu-serif.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/assets/site.css" />
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+    <script src="/assets/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="研途首页">
+          <img src="/assets/brand.svg" alt="" width="34" height="34" />
+          <span class="brand-name">研途</span>
+        </a>
+        <nav class="site-nav" aria-label="主导航">
+          <a href="#features">功能</a>
+          <a href="#scenarios">场景</a>
+          <a href="#how">工作方式</a>
+          <a href="#faq">常见问题</a>
+        </nav>
+        <a class="btn btn-primary btn-sm header-cta" href="/download/">下载</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- 首屏 -->
+      <section class="hero">
+        <div class="container">
+          <span class="eyebrow">研途桌面版 · 面向学术服务团队</span>
+          <h1>从一条消息，<br />到一份<em>交付</em></h1>
+          <p class="lead">
+            研途把微信、企业微信、飞书里的咨询和本地文件整理成可追踪的任务，<br />AI
+            读资料、写文档、做表格、出图文，关键一步停下来等你确认。
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/download/windows" data-dl="auto">
+              <svg aria-hidden="true"><use href="/assets/icons.svg#i-download" /></svg>
+              <span data-dl-label>下载 Windows 版</span>
+            </a>
+            <a class="btn btn-secondary" href="/download/" data-hide-other>查看全部下载</a>
+          </div>
+          <p class="cta-note">
+            版本 2.1.21 · 支持 Windows 10 / 11（64 位）与 Apple 芯片 Mac（macOS 11 及以上）
+          </p>
+        </div>
+
+        <div class="stage">
+          <div class="app-window" role="img" aria-label="研途工作台界面：左侧是今日工作清单，中间是 AI 正在执行的论文修订任务，右侧是交付物与记忆">
+            <div class="app-titlebar" aria-hidden="true">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="title">研途 — 工作台</span>
+            </div>
+            <div class="app-body" aria-hidden="true">
+              <aside class="app-side">
+                <div class="app-brand"><b>研</b>研途</div>
+                <div class="app-nav-item"><svg><use href="/assets/icons.svg#i-gauge" /></svg>概览</div>
+                <div class="app-nav-item is-active"><svg><use href="/assets/icons.svg#i-monitor" /></svg>工作台</div>
+                <div class="app-nav-item"><svg><use href="/assets/icons.svg#i-palette" /></svg>设计</div>
+                <div class="app-nav-item"><svg><use href="/assets/icons.svg#i-inbox" /></svg>收件箱</div>
+                <div class="app-new">＋ 新会话</div>
+                <div class="app-history">
+                  <span>第二章修订 · 陈同学</span>
+                  <span>英国金融硕士申请时间线</span>
+                  <span>问卷数据看板</span>
+                  <span>今日爬楼简报</span>
+                </div>
+                <div class="app-side-foot">设置</div>
+              </aside>
+
+              <section class="app-list">
+                <div class="app-list-head">今日工作 <small>6 项</small></div>
+                <div class="app-group">AI 执行中</div>
+                <div class="task is-active" style="--c: #2f7d4f; --c-soft: #e3f1e8">
+                  <span class="src"><svg><use href="/assets/icons.svg#i-message" /></svg></span>
+                  <span class="t">开题报告第二章按批注修订</span>
+                  <span class="m"><span class="pill run">执行中</span>微信 · 陈同学 · 10:24</span>
+                </div>
+                <div class="task" style="--c: #3a6fd8; --c-soft: #e6eefc">
+                  <span class="src"><svg><use href="/assets/icons.svg#i-message" /></svg></span>
+                  <span class="t">问卷描述统计与交叉分析</span>
+                  <span class="m"><span class="pill run">执行中</span>飞书 · 数据组 · 09:50</span>
+                </div>
+                <div class="app-group">等你确认</div>
+                <div class="task" style="--c: #2b6cb0; --c-soft: #e4eef8">
+                  <span class="src"><svg><use href="/assets/icons.svg#i-message" /></svg></span>
+                  <span class="t">英国金融硕士选校与时间线</span>
+                  <span class="m"><span class="pill wait">待确认</span>企业微信 · 王女士 · 09:12</span>
+                </div>
+                <div class="app-group">已完成</div>
+                <div class="task" style="--c: #8a5d06; --c-soft: #fbf1d6">
+                  <span class="src"><svg><use href="/assets/icons.svg#i-folder" /></svg></span>
+                  <span class="t">导师批注版_v3.docx 已归档</span>
+                  <span class="m"><span class="pill done">已完成</span>监听文件夹</span>
+                </div>
+                <div class="task" style="--c: #6b6a62; --c-soft: #efece4">
+                  <span class="src"><svg><use href="/assets/icons.svg#i-clock" /></svg></span>
+                  <span class="t">今日爬楼简报</span>
+                  <span class="m"><span class="pill done">已完成</span>定时 · 每天 18:00</span>
+                </div>
+                <div class="task" style="--c: #b4532a; --c-soft: #f8e7df">
+                  <span class="src"><svg><use href="/assets/icons.svg#i-megaphone" /></svg></span>
+                  <span class="t">找今天的热点与对标内容</span>
+                  <span class="m"><span class="pill done">已完成</span>内置流程 · 09:15</span>
+                </div>
+              </section>
+
+              <section class="app-main">
+                <div class="app-main-head">
+                  <h4>开题报告第二章按批注修订</h4>
+                  <div class="meta">
+                    <span class="pill" style="--p-bg: #e3f1e8; --p-fg: #2f7d4f">微信 · 陈同学</span>
+                    <span>高优先级 · AI 执行</span>
+                  </div>
+                </div>
+                <div class="app-thread">
+                  <div class="bubble-in">
+                    <span class="from">来自微信 · 今天 10:24</span>
+                    老师，导师的批注回来了，第二章文献综述要大改，下周三之前要交。
+                  </div>
+                  <div class="agent-card">
+                    <div class="who"><b>研</b>研途执行引擎</div>
+                    <ul class="steps">
+                      <li>
+                        <svg><use href="/assets/icons.svg#i-check" /></svg>
+                        读取「导师批注版_v3.docx」，整理出 14 条修改意见
+                      </li>
+                      <li>
+                        <svg><use href="/assets/icons.svg#i-check" /></svg>
+                        检索近三年核心期刊文献，补充 9 篇到 2.3 节
+                      </li>
+                      <li>
+                        <svg><use href="/assets/icons.svg#i-check" /></svg>
+                        逐条改写 2.1–2.4 节，保留修订痕迹
+                      </li>
+                      <li class="is-now">
+                        <svg><use href="/assets/icons.svg#i-loader" /></svg>
+                        生成逐条对应的「修改说明.docx」
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="confirm-card">
+                    <div class="h">需要你确认</div>
+                    <p>修订稿已就绪。给陈同学的回复草稿写好了，先给你过目再发出吗？</p>
+                    <div class="acts">
+                      <span class="mini-btn primary">查看草稿</span>
+                      <span class="mini-btn">稍后处理</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="app-composer">
+                  <span class="typed">草稿先给我看，参考文献统一用 APA 第 7 版<i class="caret"></i></span>
+                  <span><svg><use href="/assets/icons.svg#i-arrow-up" /></svg></span>
+                </div>
+              </section>
+
+              <aside class="app-rail">
+                <div class="rail-block">
+                  <p class="rail-title">交付物</p>
+                  <div class="file" style="--e: #2b579a">
+                    <span class="ext">DOCX</span>
+                    <span class="n">第二章_修订稿.docx</span>
+                    <span class="s">已保存 · 保留修订</span>
+                  </div>
+                  <div class="file" style="--e: #2b579a">
+                    <span class="ext">DOCX</span>
+                    <span class="n">修改说明.docx</span>
+                    <span class="s">生成中</span>
+                  </div>
+                  <div class="file" style="--e: #217346">
+                    <span class="ext">XLSX</span>
+                    <span class="n">补充文献对照表.xlsx</span>
+                    <span class="s">9 篇 · 近三年</span>
+                  </div>
+                </div>
+                <div class="rail-block">
+                  <p class="rail-title">记忆</p>
+                  <div class="memory">陈同学的导师要求参考文献用 APA 第 7 版</div>
+                  <div class="memory">终稿需附中英文摘要</div>
+                </div>
+                <div class="rail-block">
+                  <p class="rail-title">来源</p>
+                  <div class="source-line">微信 · 陈同学 · 今天 10:24</div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="works-with">
+            <div class="works-group">
+              <span class="works-label">接入</span>
+              <span class="works-item"><svg aria-hidden="true"><use href="/assets/icons.svg#i-message" /></svg>微信</span>
+              <span class="works-item"><svg aria-hidden="true"><use href="/assets/icons.svg#i-message" /></svg>企业微信</span>
+              <span class="works-item"><svg aria-hidden="true"><use href="/assets/icons.svg#i-message" /></svg>飞书</span>
+              <span class="works-item"><svg aria-hidden="true"><use href="/assets/icons.svg#i-folder" /></svg>本地文件夹</span>
+            </div>
+            <div class="works-group">
+              <span class="works-label">交付</span>
+              <span class="works-item"><b class="fmt" style="--e: #2b579a">W</b>Word</span>
+              <span class="works-item"><b class="fmt" style="--e: #217346">X</b>Excel</span>
+              <span class="works-item"><b class="fmt" style="--e: #c43e1c">P</b>PowerPoint</span>
+              <span class="works-item"><b class="fmt" style="--e: #b0332a"><svg><use href="/assets/icons.svg#i-file" /></svg></b>PDF</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 核心能力 -->
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">核心能力</span>
+            <h2>一个工作台，接住整条服务链</h2>
+            <p>从客户发来第一句话，到成品交到对方手里，中间的每一步都在同一个地方：<br />看得见、接得住、交得出。</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature reveal">
+              <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-inbox" /></svg>
+              <h3>统一收件箱</h3>
+              <p>
+                微信、企业微信、飞书的私聊和群聊汇到一处，按渠道、账号、优先级筛选。AI 提炼重点、抽出待办，起草带依据的回复草稿。
+              </p>
+            </article>
+            <article class="feature reveal">
+              <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-scan" /></svg>
+              <h3>消息自动变成任务</h3>
+              <p>
+                渠道里的新咨询、监听文件夹里的新文件，自动整理成带来源和优先级的任务。概览页一眼看清今天发现了什么、还剩多少。
+              </p>
+            </article>
+            <article class="feature reveal">
+              <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-split" /></svg>
+              <h3>AI 与人工分流</h3>
+              <p>
+                能交给 AI 的直接开跑，需要人判断的交给对应的人。每一次运行都留下记录，成功、告警、失败一目了然。
+              </p>
+            </article>
+            <article class="feature reveal">
+              <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-bot" /></svg>
+              <h3>会干活的 AI 助手</h3>
+              <p>
+                读文件、查资料、写代码、调用技能与工具，多项任务并行推进。中途可以插话、改方向，也可以取消或重试。
+              </p>
+            </article>
+            <article class="feature reveal">
+              <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-file" /></svg>
+              <h3>Office 成品交付</h3>
+              <p>
+                直接产出 Word、Excel、PPT 与 PDF，在应用里预览、修改、导出。交付物自动归到对应任务名下，随时找得到。
+              </p>
+            </article>
+            <article class="feature reveal">
+              <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-clock" /></svg>
+              <h3>定时运行与长期记忆</h3>
+              <p>
+                爬楼简报、周报、数据复盘按时自动运行。客户偏好、导师要求这类经验写进记忆，下次不用再交代一遍。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 一句话开工 -->
+      <section class="section" style="padding-top: 0">
+        <div class="container">
+          <div class="oneclick">
+            <div class="oneclick-copy reveal">
+              <span class="eyebrow">一句话开工</span>
+              <h2>常用工作，点一下就跑</h2>
+              <p>
+                新会话里内置运营、营销、宣发、办公四类共 17 个一键工单，直接读取渠道里的真实消息，不用自己写指令。<br />每天最耗时间的那几件事，交给研途先做一遍。
+              </p>
+              <div class="oneclick-tabs" role="tablist" aria-label="一键工单分类">
+                <button role="tab" id="oc-tab-ops" aria-controls="oc-panel-ops" aria-selected="true">运营</button>
+                <button role="tab" id="oc-tab-mkt" aria-controls="oc-panel-mkt" aria-selected="false" tabindex="-1">营销</button>
+                <button role="tab" id="oc-tab-promo" aria-controls="oc-panel-promo" aria-selected="false" tabindex="-1">宣发</button>
+                <button role="tab" id="oc-tab-office" aria-controls="oc-panel-office" aria-selected="false" tabindex="-1">办公</button>
+              </div>
+            </div>
+            <div class="oneclick-cards" id="oc-panel-ops" role="tabpanel" aria-labelledby="oc-tab-ops">
+              <article class="oc-card reveal">
+                <h3>今日爬楼简报</h3>
+                <p>一页纸说清今天各群发生了什么、谁还在等你回复。</p>
+                <div class="oc-meta"><span class="save">省 40 分钟</span><span class="tag">长上下文</span></div>
+              </article>
+              <article class="oc-card reveal">
+                <h3>未回复清单</h3>
+                <p>所有球还在你这边的对话，按拖了多久排好序。</p>
+                <div class="oc-meta"><span class="save">省 25 分钟</span><span class="tag">会话状态判定</span></div>
+              </article>
+              <article class="oc-card reveal">
+                <h3>重复问题归类</h3>
+                <p>被问得最多的问题排成榜单，直接整理成标准答复。</p>
+                <div class="oc-meta"><span class="save">省 60 分钟</span><span class="tag">跨会话聚类</span></div>
+              </article>
+              <article class="oc-card reveal">
+                <h3>不满与催单预警</h3>
+                <p>把可能出问题的对话先挑出来，赶在客户着急之前处理。</p>
+                <div class="oc-meta"><span class="save">省 20 分钟</span><span class="tag">语气判定</span></div>
+              </article>
+            </div>
+            <div class="oneclick-cards" id="oc-panel-mkt" role="tabpanel" aria-labelledby="oc-tab-mkt" hidden>
+              <article class="oc-card">
+                <h3>高意向线索筛查</h3>
+                <p>谁快成交了、卡在哪一步、下一句该怎么说。</p>
+                <div class="oc-meta"><span class="save">省 50 分钟</span><span class="tag">意向打分</span></div>
+              </article>
+              <article class="oc-card">
+                <h3>跟进话术生成</h3>
+                <p>同一次跟进写成三个语气版本，复制就能发。</p>
+                <div class="oc-meta"><span class="save">省 15 分钟</span><span class="tag">多版本生成</span></div>
+              </article>
+              <article class="oc-card">
+                <h3>掉队客户复盘</h3>
+                <p>聊到一半没了下文的客户，找出断在哪一句。</p>
+                <div class="oc-meta"><span class="save">省 35 分钟</span><span class="tag">流失归因</span></div>
+              </article>
+              <article class="oc-card">
+                <h3>客户画像卡</h3>
+                <p>一个客户的完整画像，下次开口前先看一眼。</p>
+                <div class="oc-meta"><span class="save">省 30 分钟</span><span class="tag">实体抽取</span></div>
+              </article>
+            </div>
+            <div class="oneclick-cards" id="oc-panel-promo" role="tabpanel" aria-labelledby="oc-tab-promo" hidden>
+              <article class="oc-card">
+                <h3>小红书笔记</h3>
+                <p>标题、正文、话题标签和配图脚本，复制即发。</p>
+                <div class="oc-meta"><span class="save">省 90 分钟</span><span class="tag">联网检索</span></div>
+              </article>
+              <article class="oc-card">
+                <h3>抖音口播脚本</h3>
+                <p>逐句口播稿、分镜和字幕，照着念就行。</p>
+                <div class="oc-meta"><span class="save">省 90 分钟</span><span class="tag">脚本生成</span></div>
+              </article>
+              <article class="oc-card">
+                <h3>朋友圈文案</h3>
+                <p>三条不同风格的文案，配图说明一起给。</p>
+                <div class="oc-meta"><span class="save">省 25 分钟</span><span class="tag">多版本生成</span></div>
+              </article>
+              <article class="oc-card">
+                <h3>公众号长文</h3>
+                <p>标题、完整成文和排版提示，一次到位。</p>
+                <div class="oc-meta"><span class="save">省 150 分钟</span><span class="tag">长文生成</span></div>
+              </article>
+              <article class="oc-card">
+                <h3>闲鱼商品文案</h3>
+                <p>标题、详情、定价建议和常见砍价应对。</p>
+                <div class="oc-meta"><span class="save">省 40 分钟</span><span class="tag">竞品比价</span></div>
+              </article>
+            </div>
+            <div class="oneclick-cards" id="oc-panel-office" role="tabpanel" aria-labelledby="oc-tab-office" hidden>
+              <article class="oc-card">
+                <h3>聊天记录转纪要</h3>
+                <p>结论、分工、待办、遗留问题，四段齐全。</p>
+                <div class="oc-meta"><span class="save">省 45 分钟</span><span class="tag">文档产出</span></div>
+              </article>
+              <article class="oc-card">
+                <h3>本周工作周报</h3>
+                <p>按业务线分好的周报，直接交上去。</p>
+                <div class="oc-meta"><span class="save">省 60 分钟</span><span class="tag">跨会话汇总</span></div>
+              </article>
+              <article class="oc-card">
+                <h3>待办抽取与排期</h3>
+                <p>带截止时间的待办表，直接排进日程。</p>
+                <div class="oc-meta"><span class="save">省 30 分钟</span><span class="tag">事项抽取</span></div>
+              </article>
+              <article class="oc-card">
+                <h3>批量回复包</h3>
+                <p>今天要回的话一次写完，逐条复制。</p>
+                <div class="oc-meta"><span class="save">省 50 分钟</span><span class="tag">多会话并行</span></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 使用场景 -->
+      <section class="section" id="scenarios" style="background: var(--paper-2)">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">使用场景</span>
+            <h2>为学术服务的每条业务线而设计</h2>
+            <p>同一个工作台，按业务线给出不同的执行方式和交付格式。</p>
+          </div>
+
+          <div class="scenario-tabs">
+            <div class="tablist" role="tablist" aria-label="业务场景">
+              <button role="tab" id="tab-paper" aria-controls="panel-paper" aria-selected="true">
+                <svg aria-hidden="true"><use href="/assets/icons.svg#i-pen" /></svg>论文辅导
+              </button>
+              <button role="tab" id="tab-abroad" aria-controls="panel-abroad" aria-selected="false" tabindex="-1">
+                <svg aria-hidden="true"><use href="/assets/icons.svg#i-plane" /></svg>留学申请
+              </button>
+              <button role="tab" id="tab-research" aria-controls="panel-research" aria-selected="false" tabindex="-1">
+                <svg aria-hidden="true"><use href="/assets/icons.svg#i-flask" /></svg>科研与算法
+              </button>
+              <button role="tab" id="tab-data" aria-controls="panel-data" aria-selected="false" tabindex="-1">
+                <svg aria-hidden="true"><use href="/assets/icons.svg#i-chart" /></svg>数据分析
+              </button>
+              <button role="tab" id="tab-promo" aria-controls="panel-promo" aria-selected="false" tabindex="-1">
+                <svg aria-hidden="true"><use href="/assets/icons.svg#i-megaphone" /></svg>宣发运营
+              </button>
+            </div>
+          </div>
+
+          <!-- 论文辅导 -->
+          <div class="scenario" id="panel-paper" role="tabpanel" aria-labelledby="tab-paper" style="--panel: #dce4ef">
+            <div class="scenario-stage">
+              <div class="doc" style="--doc: #2b579a">
+                <div class="doc-bar"><b>W</b>第二章_文献综述_修订稿.docx</div>
+                <div class="doc-page">
+                  <h5>2.3 国内外研究现状</h5>
+                  <p>
+                    关于在线学习投入的影响因素，<span class="del">已有研究较为充分</span><span class="ins">已有研究主要从个体动机与课程设计两个层面展开</span>，近三年的实证文献进一步引入了同伴互动与教师反馈变量（见表 2-1）。
+                  </p>
+                  <p>
+                    <span class="del">但缺少对不同学科的比较。</span><span class="ins">针对不同学科背景学生的比较研究仍然较少，这正是本研究的切入点。</span>
+                  </p>
+                  <div class="doc-comment">
+                    <span>导师批注 3 / 14：补充近三年核心期刊文献，并说明与本研究的关系。<br /><b>已处理：</b>补充 9 篇，新增表 2-1。</span>
+                  </div>
+                </div>
+              </div>
+              <div class="side-cards">
+                <div class="dark-card">
+                  <div class="label"><i style="--c: #2f9e57"></i>微信 · 陈同学 · 10:24</div>
+                  老师，导师的批注回来了，第二章文献综述要大改，下周三之前要交。
+                </div>
+                <div class="dark-card">
+                  <div class="label"><i></i>研途会这样做</div>
+                  <ol>
+                    <li>读取批注版文档，整理出每一条修改意见</li>
+                    <li>检索近三年核心期刊文献，补进对应小节</li>
+                    <li>逐条改写并保留修订痕迹</li>
+                    <li>生成逐条对应的修改说明，回复草稿等你确认</li>
+                  </ol>
+                </div>
+                <div class="chips">
+                  <span><svg aria-hidden="true"><use href="/assets/icons.svg#i-file" /></svg>Word 文档</span>
+                  <span><svg aria-hidden="true"><use href="/assets/icons.svg#i-search" /></svg>文献检索</span>
+                  <span><svg aria-hidden="true"><use href="/assets/icons.svg#i-book" /></svg>学术排版</span>
+                </div>
+              </div>
+            </div>
+            <div class="scenario-caption">
+              <h3>批注回来，<br />修订稿和修改说明一起交付</h3>
+              <p>
+                研途按导师的每一条批注逐项修改，保留修订痕迹方便学生对照，同时附上逐条对应的修改说明。Word 目录、公式和 APA、芝加哥等参考文献格式按学术规范排好，你只需要审阅和发送。
+              </p>
+            </div>
+          </div>
+
+          <!-- 留学申请 -->
+          <div class="scenario" id="panel-abroad" role="tabpanel" aria-labelledby="tab-abroad" style="--panel: #dde9e1" hidden>
+            <div class="scenario-stage">
+              <div class="doc" style="--doc: #217346">
+                <div class="doc-bar"><b>X</b>英国金融硕士_申请时间线.xlsx</div>
+                <div class="gantt">
+                  <div class="gantt-scale"><span></span><span>10 月</span><span>11 月</span><span>12 月</span><span>次年 1 月</span></div>
+                  <div class="gantt-row"><span>语言成绩</span><span class="gantt-track"><span class="gantt-bar" style="--s: 0%; --w: 30%"></span></span></div>
+                  <div class="gantt-row"><span>选校定稿</span><span class="gantt-track"><span class="gantt-bar" style="--s: 8%; --w: 22%; --b: #2b4c7e"></span></span></div>
+                  <div class="gantt-row"><span>文书与简历</span><span class="gantt-track"><span class="gantt-bar" style="--s: 22%; --w: 38%; --b: #c9801a"></span></span></div>
+                  <div class="gantt-row"><span>推荐信</span><span class="gantt-track"><span class="gantt-bar" style="--s: 30%; --w: 30%; --b: #7a5bb5"></span></span></div>
+                  <div class="gantt-row"><span>网申提交</span><span class="gantt-track"><span class="gantt-bar" style="--s: 55%; --w: 30%"></span></span></div>
+                  <div class="gantt-row"><span>面试准备</span><span class="gantt-track"><span class="gantt-bar" style="--s: 78%; --w: 22%; --b: #2b4c7e"></span></span></div>
+                </div>
+              </div>
+              <div class="side-cards">
+                <div class="dark-card">
+                  <div class="label"><i style="--c: #2b7fd8"></i>企业微信 · 王女士 · 09:12</div>
+                  孩子想申英国的金融硕士，GPA 3.4，雅思 7 分，现在开始准备还来得及吗？
+                </div>
+                <div class="dark-card">
+                  <div class="label"><i></i>研途会这样做</div>
+                  <ol>
+                    <li>以学校官网为准，核对项目要求与截止日期</li>
+                    <li>列出符合条件的项目，标出还需要补充的信息</li>
+                    <li>生成申请时间线和材料清单</li>
+                    <li>起草给家长的回复，你确认后再发出</li>
+                  </ol>
+                </div>
+                <div class="chips">
+                  <span><svg aria-hidden="true"><use href="/assets/icons.svg#i-globe" /></svg>联网核实</span>
+                  <span><svg aria-hidden="true"><use href="/assets/icons.svg#i-table" /></svg>Excel 表格</span>
+                  <span><svg aria-hidden="true"><use href="/assets/icons.svg#i-message" /></svg>回复草稿</span>
+                </div>
+              </div>
+            </div>
+            <div class="scenario-caption">
+              <h3>咨询进来，<br />当天给出时间线和材料清单</h3>
+              <p>
+                研途以学校官网为准核对截止日期和材料要求，缺什么信息先问清楚，不替你编造数字。时间线和材料清单直接生成表格，家长一看就懂，后续跟进也有据可查。
+              </p>
+            </div>
+          </div>
+
+          <!-- 科研与算法 -->
+          <div class="scenario" id="panel-research" role="tabpanel" aria-labelledby="tab-research" style="--panel: #e6e1ef" hidden>
+            <div class="scenario-stage">
+              <div class="doc" style="--doc: #c43e1c">
+                <div class="doc-bar"><b>P</b>组会_实验结果汇报.pptx</div>
+                <div class="slide">
+                  <small>EXPERIMENT · 第 3 周</small>
+                  <h5>改进方法在三项指标上均优于基线</h5>
+                  <div class="bars">
+                    <div class="grp"><i style="--h: 84.2%" data-v="84.2%"></i><i class="ours" style="--h: 91.1%" data-v="91.1%"></i></div>
+                    <div class="grp"><i style="--h: 79.1%" data-v="79.1%"></i><i class="ours" style="--h: 86.9%" data-v="86.9%"></i></div>
+                    <div class="grp"><i style="--h: 81.1%" data-v="81.1%"></i><i class="ours" style="--h: 89.4%" data-v="89.4%"></i></div>
+                  </div>
+                  <div class="bars-legend"><span>准确率</span><span>召回率</span><span>F1</span></div>
+                  <div class="slide-key"><span><i></i>基线方法</span><span><i class="ours"></i>改进方法</span></div>
+                </div>
+              </div>
+              <div class="side-cards">
+                <div class="dark-card">
+                  <div class="label"><i style="--c: #3a6fd8"></i>飞书 · 课题组 · 周三 16:40</div>
+                  复现这篇论文的基线实验，和我们的方法对比一下，周五组会要一页结果。
+                </div>
+                <div class="dark-card">
+                  <div class="label"><i></i>研途会这样做</div>
+                  <ol>
+                    <li>在任务自己的工作目录里配置环境、运行实验</li>
+                    <li>汇总各组指标，生成对比图</li>
+                    <li>做成组会用的结果页，附上实验记录</li>
+                  </ol>
+                </div>
+                <div class="chips">
+                  <span><svg aria-hidden="true"><use href="/assets/icons.svg#i-terminal" /></svg>代码执行</span>
+                  <span><svg aria-hidden="true"><use href="/assets/icons.svg#i-chart" /></svg>数据图表</span>
+                  <span><svg aria-hidden="true"><use href="/assets/icons.svg#i-slides" /></svg>PPT 演示</span>
+                </div>
+              </div>
+            </div>
+            <div class="scenario-caption">
+              <h3>实验跑完，<br />组会的那一页也做好了</h3>
+              <p>
+                研途在任务自己的工作目录里写代码、跑实验、记录每一步，结果直接整理成图表和汇报页。过程文件都留在任务名下，老师问起任何一个数字都能追到来源。
+              </p>
+            </div>
+          </div>
+
+          <!-- 数据分析 -->
+          <div class="scenario" id="panel-data" role="tabpanel" aria-labelledby="tab-data" style="--panel: #f1e6d3" hidden>
+            <div class="scenario-stage">
+              <div class="doc" style="--doc: #217346">
+                <div class="doc-bar"><b>X</b>问卷分析_数据看板.xlsx</div>
+                <div class="dash">
+                  <div class="kpis">
+                    <div class="kpi"><small>有效问卷</small><b>1,286</b><em>有效率 92%</em></div>
+                    <div class="kpi"><small>总体满意度</small><b>4.3 / 5</b><em>较上期 +0.2</em></div>
+                    <div class="kpi"><small>推荐意愿</small><b>72%</b><em>较上期 +6 个百分点</em></div>
+                  </div>
+                  <div class="hbars">
+                    <div class="hbar"><span>课程内容</span><span style="--v: 86%"></span><span>86%</span></div>
+                    <div class="hbar"><span>授课方式</span><span style="--v: 78%"></span><span>78%</span></div>
+                    <div class="hbar"><span>作业反馈</span><span style="--v: 64%"></span><span>64%</span></div>
+                    <div class="hbar"><span>平台体验</span><span style="--v: 57%"></span><span>57%</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="side-cards">
+                <div class="dark-card">
+                  <div class="label"><i style="--c: #2f9e57"></i>微信 · 李老师 · 14:05</div>
+                  问卷回收了 1,398 份，帮我做描述统计和交叉分析，最好出一份看板。
+                </div>
+                <div class="dark-card">
+                  <div class="label"><i></i>研途会这样做</div>
+                  <ol>
+                    <li>清洗数据，剔除无效问卷</li>
+                    <li>描述统计与交叉分析，找出显著差异</li>
+                    <li>生成带关键指标和图表的 Excel 看板</li>
+                    <li>写一段结论摘要，方便直接转给客户</li>
+                  </ol>
+                </div>
+                <div class="chips">
+                  <span><svg aria-hidden="true"><use href="/assets/icons.svg#i-chart" /></svg>统计分析</span>
+                  <span><svg aria-hidden="true"><use href="/assets/icons.svg#i-table" /></svg>Excel 看板</span>
+                  <span><svg aria-hidden="true"><use href="/assets/icons.svg#i-file" /></svg>结论摘要</span>
+                </div>
+              </div>
+            </div>
+            <div class="scenario-caption">
+              <h3>原始数据进来，<br />看板和结论一起出</h3>
+              <p>
+                从清洗、统计到出图，研途把每一步的口径都写清楚。看板里的指标和图表都连着数据，客户要调整口径时改一处即可，结论摘要可以直接转发。
+              </p>
+            </div>
+          </div>
+
+          <!-- 宣发运营 -->
+          <div class="scenario" id="panel-promo" role="tabpanel" aria-labelledby="tab-promo" style="--panel: #f3e0da" hidden>
+            <div class="scenario-stage">
+              <div class="doc" style="--doc: #2b4c7e">
+                <div class="doc-bar"><b>研</b>设计 · 宣发内容 · 7 个平台</div>
+                <div class="posts">
+                  <div class="post">
+                    <div class="post-cover xhs">
+                      <span class="xhs-tag"># 考研复试</span>
+                      <p class="xhs-title">考研复试<br /><mark>导师最看重</mark>的<br />3 件事</p>
+                      <ol class="xhs-list">
+                        <li><b>01</b>研究兴趣讲得清</li>
+                        <li><b>02</b>本科成果有证据</li>
+                        <li><b>03</b>英文问答不怯场</li>
+                      </ol>
+                      <span class="xhs-note">复试前一周，照着准备就够了</span>
+                      <span class="xhs-page">1 / 3</span>
+                    </div>
+                    <div class="post-body"><b>小红书</b><span>配图 3 张 · 3:4 竖图 · 标题 20 字内</span></div>
+                  </div>
+                  <div class="post-stack">
+                    <div class="post">
+                      <div class="post-cover wide wx">
+                        <small>论文全流程 · 第 1 期</small>
+                        <p>从开题到答辩<br />一篇论文的 6 个关键节点</p>
+                        <span class="wx-line" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                      </div>
+                      <div class="post-body"><b>公众号</b><span>1200–2000 字 · 讲透一件事</span></div>
+                    </div>
+                    <div class="moment">
+                      <b>朋友圈</b>
+                      今天帮三位同学理清了开题思路，最常见的问题还是选题太大。想聊聊自己的题目，随时找我。
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="side-cards">
+                <div class="dark-card">
+                  <div class="label"><i style="--c: #2f9e57"></i>微信 · 市场部 · 09:20</div>
+                  这周主推考研复试辅导，七个平台各出一版，今天要发。
+                </div>
+                <div class="dark-card">
+                  <div class="label"><i></i>研途会这样做</div>
+                  <ol>
+                    <li>找今天的热点与对标内容</li>
+                    <li>按小红书、抖音、朋友圈、公众号、闲鱼、X、知乎各自的规矩成稿</li>
+                    <li>按平台比例生成配图</li>
+                    <li>汇总到当日宣发任务，等你核对后发布</li>
+                  </ol>
+                </div>
+                <div class="chips">
+                  <span><svg aria-hidden="true"><use href="/assets/icons.svg#i-megaphone" /></svg>平台规矩</span>
+                  <span><svg aria-hidden="true"><use href="/assets/icons.svg#i-image" /></svg>生图</span>
+                  <span><svg aria-hidden="true"><use href="/assets/icons.svg#i-clock" /></svg>每日宣发流程</span>
+                </div>
+              </div>
+            </div>
+            <div class="scenario-caption">
+              <h3>一个主题，<br />七个平台各写各的</h3>
+              <p>
+                小红书标题 20 字以内，公众号讲透一件事，朋友圈 6 行以内。研途按每个平台的规矩写正文、配图，复制就能发；每天的宣发步骤按时间表自动排进工作台。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 工作方式 -->
+      <section class="section" id="how">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">工作方式</span>
+            <h2>发现、分流、执行、交付，<br />一条线跑完</h2>
+            <p>你关心结果，研途把过程接住：每一步谁在做、做到哪、产出了什么，随时看得到。</p>
+          </div>
+          <div class="flow">
+            <div class="flow-step reveal">
+              <div class="num">01</div>
+              <h3>发现</h3>
+              <p>渠道消息和监听文件夹里的新文件，自动整理成带来源和优先级的任务。</p>
+            </div>
+            <div class="flow-step reveal">
+              <div class="num">02</div>
+              <h3>分流</h3>
+              <p>能交给 AI 的自动执行；需要判断、需要沟通的，交给对应的人。</p>
+            </div>
+            <div class="flow-step reveal">
+              <div class="num">03</div>
+              <h3>执行</h3>
+              <p>AI 读资料、写文档、跑代码，关键一步停下来请你确认。</p>
+            </div>
+            <div class="flow-step reveal">
+              <div class="num">04</div>
+              <h3>交付与沉淀</h3>
+              <p>成品归档到任务名下，过程留下记录，经验写进记忆，下一次更快。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 由你掌控 -->
+      <section class="section" style="padding-top: 0">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">由你掌控</span>
+            <h2>工作在你的电脑上完成</h2>
+            <p>任务、文件和记录都保存在你的电脑上，关键决定始终由你来做。</p>
+          </div>
+          <div class="control-list">
+            <div class="control-row reveal">
+              <h3><svg aria-hidden="true"><use href="/assets/icons.svg#i-laptop" /></svg>在本机运行</h3>
+              <p>桌面版和本机网页端只在你的电脑上提供服务。任务文件、会话和运行记录保存在本地，打开就能接着干。</p>
+            </div>
+            <div class="control-row reveal">
+              <h3><svg aria-hidden="true"><use href="/assets/icons.svg#i-user-check" /></svg>关键一步等你确认</h3>
+              <p>需要拍板的地方，AI 会把计划和理由摆在你面前再继续。给客户的回复只生成草稿，发不发、什么时候发由你决定。</p>
+            </div>
+            <div class="control-row reveal">
+              <h3><svg aria-hidden="true"><use href="/assets/icons.svg#i-history" /></svg>全程可追溯</h3>
+              <p>每一次运行、每一个文件改动、每一条结论都有记录，随时回看做了什么、依据是什么。</p>
+            </div>
+            <div class="control-row reveal">
+              <h3><svg aria-hidden="true"><use href="/assets/icons.svg#i-cpu" /></svg>用你选择的模型</h3>
+              <p>在「设置 → 模型」里接入你自己的模型服务，默认提供 OpenRouter 入口，也可以换成其他兼容的服务，随时切换。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 常见问题 -->
+      <section class="section" id="faq" style="padding-top: 0">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>常见问题</h2>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>研途适合哪些团队？</summary>
+              <div class="answer">
+                <p>
+                  研途面向成人学术服务团队：论文与升学顾问、留学申请顾问、科研与算法辅导、数据分析人员，以及负责内容宣发和项目统筹的同事。无论是独立顾问还是团队里的某个岗位，都可以用它管住手上的咨询和交付。
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>需要自己准备 AI 模型吗？</summary>
+              <div class="answer">
+                <p>
+                  需要。首次打开后进入「设置 → 模型」，点击「添加模型」，默认选中 OpenRouter，填入你的 API Key 即可开始使用。也可以接入其他兼容的模型服务。
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>支持哪些消息渠道？</summary>
+              <div class="answer">
+                <p>
+                  微信、企业微信和飞书，Windows 和 Mac 都支持。研途按这台电脑上已登录的微信、企业微信客户端同步消息，飞书通过授权接入，在「扩展 → 渠道 → 消息采集接入」里开启；首次开启时按提示完成系统授权。
+                </p>
+                <p>消息同步会用到电脑上的 Python 3（Windows 需要 64 位 Python 3.10 或更新版本）。也可以把本地文件夹设为监听目录，放进去的新文件会自动变成任务。</p>
+              </div>
+            </details>
+            <details>
+              <summary>回复会自动发给客户吗？</summary>
+              <div class="answer">
+                <p>不会。研途为你起草回复草稿，你可以修改、复制后在原渠道发出；所有需要发送的环节都由你确认。</p>
+              </div>
+            </details>
+            <details>
+              <summary>数据保存在哪里？</summary>
+              <div class="answer">
+                <p>
+                  保存在你自己的电脑上。任务、会话、交付文件和运行记录都在本机；只有在调用模型时，相关内容才会发送给你配置的模型服务。
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>支持哪些系统？</summary>
+              <div class="answer">
+                <p>
+                  Windows 10 与 Windows 11（64 位），以及搭载 Apple 芯片（M1 及更新）的 Mac，需 macOS 11 或更高版本。详见<a class="path" href="/download/">下载页</a>。
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>怎么更新到新版本？</summary>
+              <div class="answer">
+                <p>在应用里打开「设置 → 关于」，点击「检查更新」，有新版本时可以直接下载。也可以随时回到下载页获取最新安装包。</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="dark-zone">
+      <section class="final-cta">
+        <div class="container">
+          <h2>把下一条咨询，交给研途</h2>
+          <p>下载桌面版，几分钟完成设置，今天就开始第一项任务。</p>
+          <div class="cta-row">
+            <a class="btn btn-light" href="/download/windows" data-dl="auto">
+              <svg aria-hidden="true"><use href="/assets/icons.svg#i-download" /></svg>
+              <span data-dl-label>下载 Windows 版</span>
+            </a>
+            <a class="btn btn-ghost-dark" href="/download/mac" data-dl="other" data-hide-other>下载 macOS 版</a>
+          </div>
+          <p class="cta-note">版本 2.1.21 · <a href="/download/#install">查看安装说明</a></p>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <a class="brand" href="/" aria-label="研途首页">
+                <img src="/assets/brand.svg" alt="" width="34" height="34" />
+                <span class="brand-name">研途</span>
+              </a>
+              <p>面向成人学术服务团队的本地优先 AI 工作台，<br />把咨询、执行与交付放进同一条可追踪的工作流。</p>
+            </div>
+            <div class="footer-col">
+              <h4>产品</h4>
+              <a href="/#features">核心能力</a>
+              <a href="/#scenarios">使用场景</a>
+              <a href="/#how">工作方式</a>
+            </div>
+            <div class="footer-col">
+              <h4>下载</h4>
+              <a href="/download/windows">Windows 版</a>
+              <a href="/download/mac">macOS 版</a>
+              <a href="/download/#install">安装说明</a>
+            </div>
+            <div class="footer-col">
+              <h4>支持</h4>
+              <a href="/#faq">常见问题</a>
+              <a href="/download/#release">版本说明</a>
+              <a href="/download/#verify">校验安装包</a>
+            </div>
+          </div>
+          <div class="footer-base">
+            <span>© <span data-year>2026</span> 研途</span>
+            <span>研途桌面版 2.1.21</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>下载研途 · Windows 与 macOS 桌面版</title>
+    <meta
+      name="description"
+      content="下载研途桌面版 2.1.21：Windows 10/11（64 位）与 Apple 芯片 Mac（macOS 11 及以上）。附安装说明、首次使用步骤与安装包校验值。"
+    />
+    <meta name="theme-color" content="#faf9f5" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="研途" />
+    <meta property="og:title" content="下载研途桌面版" />
+    <meta property="og:description" content="Windows 与 Apple 芯片 Mac 安装包，附安装说明与校验值。" />
+    <meta property="og:url" content="https://yantu.netlify.app/download/" />
+    <meta property="og:image" content="https://yantu.netlify.app/assets/og.png" />
+    <link rel="preload" href="/assets/fonts/yantu-serif.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/assets/site.css" />
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+    <script src="/assets/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="研途首页">
+          <img src="/assets/brand.svg" alt="" width="34" height="34" />
+          <span class="brand-name">研途</span>
+        </a>
+        <nav class="site-nav" aria-label="主导航">
+          <a href="/#features">功能</a>
+          <a href="/#scenarios">场景</a>
+          <a href="#install">安装说明</a>
+          <a href="#faq">常见问题</a>
+        </nav>
+        <a class="btn btn-primary btn-sm header-cta" href="/download/" aria-current="page">下载</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="dl-hero">
+        <div class="container">
+          <span class="eyebrow">研途桌面版 2.1.21</span>
+          <h1>下载研途</h1>
+          <p class="lead">在 Windows 或 Mac 上安装研途，几分钟完成设置，就能把第一条咨询交给它。</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/download/windows" data-dl="auto">
+              <svg aria-hidden="true"><use href="/assets/icons.svg#i-download" /></svg>
+              <span data-dl-label>下载 Windows 版</span>
+            </a>
+            <a class="btn btn-secondary" href="/download/mac" data-dl="other">下载 macOS 版</a>
+          </div>
+          <p class="cta-note">发布于 2026 年 9 月 23 日 · <a href="#release">查看版本说明</a></p>
+        </div>
+      </section>
+
+      <section class="section" id="platforms" style="padding-top: clamp(56px, 7vw, 88px)">
+        <div class="container">
+          <div class="platforms">
+            <article class="platform" data-platform="windows">
+              <div class="platform-head">
+                <span class="os"><svg aria-hidden="true"><use href="/assets/icons.svg#i-windows" /></svg></span>
+                <h2>Windows</h2>
+                <span class="rec">推荐你的系统</span>
+              </div>
+              <p class="platform-req">Windows 10 / Windows 11，64 位（x64）</p>
+              <dl class="spec">
+                <div>
+                  <dt>安装包</dt>
+                  <dd>Yantu-2.1.21-win-x64.exe</dd>
+                </div>
+                <div>
+                  <dt>大小</dt>
+                  <dd>198 MB</dd>
+                </div>
+                <div id="verify">
+                  <dt>SHA-256</dt>
+                  <dd class="hash">
+                    <code id="sha-win">ab4ab5873c3f509b37d8cb30f3dc6143dafaabdc7ff7edd34156def36b6a1645</code>
+                    <button class="copy-btn" type="button" data-copy="sha-win">复制</button>
+                  </dd>
+                </div>
+              </dl>
+              <a class="btn btn-primary" href="/download/windows">
+                <svg aria-hidden="true"><use href="/assets/icons.svg#i-download" /></svg>下载 Windows 版
+              </a>
+            </article>
+
+            <article class="platform" data-platform="mac">
+              <div class="platform-head">
+                <span class="os"><svg aria-hidden="true"><use href="/assets/icons.svg#i-apple" /></svg></span>
+                <h2>macOS</h2>
+                <span class="rec">推荐你的系统</span>
+              </div>
+              <p class="platform-req">Apple 芯片（M1 及更新）· macOS 11 及以上</p>
+              <dl class="spec">
+                <div>
+                  <dt>安装包</dt>
+                  <dd>Yantu-2.1.21-mac-arm64.dmg</dd>
+                </div>
+                <div>
+                  <dt>大小</dt>
+                  <dd>296 MB</dd>
+                </div>
+                <div>
+                  <dt>SHA-256</dt>
+                  <dd class="hash">
+                    <code id="sha-mac">7299eb5f0e1082ae18bcb237f72bdb8b9b6d1a022604e957a1904817fcd31ee6</code>
+                    <button class="copy-btn" type="button" data-copy="sha-mac">复制</button>
+                  </dd>
+                </div>
+              </dl>
+              <a class="btn btn-primary" href="/download/mac">
+                <svg aria-hidden="true"><use href="/assets/icons.svg#i-download" /></svg>下载 macOS 版
+              </a>
+            </article>
+          </div>
+          <p class="dl-note">安装包只包含研途应用本身，首次打开是全新的空白工作台，所有数据都从你自己的使用开始。</p>
+        </div>
+      </section>
+
+      <section class="section" id="install" style="padding-top: 0">
+        <div class="container two-col">
+          <div class="col-head reveal">
+            <span class="eyebrow">安装说明</span>
+            <h2>三步装好，<br />首次打开照着做</h2>
+            <p>
+              Windows 与 macOS 都会在第一次打开新下载的应用时请你确认一次，确认之后就和普通应用一样直接打开。
+            </p>
+          </div>
+          <div class="guide">
+            <div class="guide-card reveal">
+              <h3><svg aria-hidden="true"><use href="/assets/icons.svg#i-windows" /></svg>Windows</h3>
+              <ol class="numbered">
+                <li>
+                  <span>双击运行 <b>Yantu-2.1.21-win-x64.exe</b>。如果出现「Windows 已保护你的电脑」，点击<b>「更多信息」</b>，再点<b>「仍要运行」</b>。</span>
+                </li>
+                <li><span>选择安装方式（仅为我安装或为所有用户安装）和安装位置，点击「安装」。</span></li>
+                <li><span>安装完成后，从桌面或开始菜单打开<b>研途</b>。</span></li>
+              </ol>
+            </div>
+            <div class="guide-card reveal">
+              <h3><svg aria-hidden="true"><use href="/assets/icons.svg#i-apple" /></svg>macOS</h3>
+              <ol class="numbered">
+                <li><span>双击打开 <b>Yantu-2.1.21-mac-arm64.dmg</b>，把 <b>研途（Yantu）</b>拖进「应用程序」文件夹。</span></li>
+                <li>
+                  <span>第一次打开时如果提示无法验证开发者，先点「完成」，再打开<b>「系统设置 → 隐私与安全性」</b>，在页面底部点击<b>「仍要打开」</b>，输入开机密码确认。</span>
+                </li>
+                <li>
+                  <div>
+                    如果提示「已损坏，无法打开」，打开「终端」运行下面这行命令，然后再次打开研途：
+                    <span class="cmd">
+                      <code id="cmd-xattr">xattr -dr com.apple.quarantine /Applications/Yantu.app</code>
+                      <button class="copy-btn" type="button" data-copy="cmd-xattr">复制</button>
+                    </span>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="first-run" style="background: var(--paper-2)">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">装好之后</span>
+            <h2>三步开始第一项任务</h2>
+          </div>
+          <div class="first-steps">
+            <div class="first-step reveal">
+              <div class="num">01</div>
+              <h3>添加模型</h3>
+              <p>
+                打开 <span class="path">设置 → 模型</span>，点击「添加模型」。默认选中 OpenRouter，填入你的 API Key 保存即可；也可以选择其他兼容的模型服务。
+              </p>
+            </div>
+            <div class="first-step reveal">
+              <div class="num">02</div>
+              <h3>接入工作来源</h3>
+              <p>
+                在输入框的「＋」菜单点「前往工具设置」，进入 <span class="path">扩展 → 渠道</span>：在「消息采集接入」里打开微信、企业微信、飞书的同步，在「本地文件夹」里添加要监听的目录。消息同步需要电脑上装有 Python 3（Windows 为 64 位 3.10 或更新版本）。
+              </p>
+            </div>
+            <div class="first-step reveal">
+              <div class="num">03</div>
+              <h3>交出第一项任务</h3>
+              <p>
+                点 <span class="path">新会话</span>，选一个「一句话开工」的工单，或者直接描述你要交付的东西，研途会接着把它做完。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="release">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">版本说明</span>
+            <h2>2.1.21</h2>
+          </div>
+          <div class="release reveal">
+            <div class="release-head">
+              <h3>研途桌面版 2.1.21</h3>
+              <time datetime="2026-09-23">2026 年 9 月 23 日</time>
+            </div>
+            <ul>
+              <li>概览、工作台、设计、收件箱四个主入口：渠道消息与本地文件自动整理成任务，AI 与人工分流执行。</li>
+              <li>论文修订、申请材料、数据看板与汇报直接交付为 Word、Excel、PPT，宣发内容按 7 个平台的规矩生成。</li>
+              <li>添加模型默认提供 OpenRouter 入口，填入自己的 API Key 即可开始使用。</li>
+              <li>应用内「设置 → 关于 → 检查更新」对接研途官方发布渠道，新版本发布后可在应用内直接下载。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq" style="padding-top: 0">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>下载与安装常见问题</h2>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>我的电脑能装吗？</summary>
+              <div class="answer">
+                <p>Windows 需要 Windows 10 或 Windows 11 的 64 位系统。Mac 需要 Apple 芯片（M1 及之后的所有 M 系列芯片）并运行 macOS 11 或更高版本。</p>
+                <p>在 Mac 上可以点击左上角苹果菜单 →「关于本机」，看到「芯片：Apple M…」即可安装。</p>
+              </div>
+            </details>
+            <details>
+              <summary>Intel 芯片的 Mac 可以用吗？</summary>
+              <div class="answer">
+                <p>当前的 macOS 安装包面向 Apple 芯片（M1 及更新）构建，Intel 芯片的 Mac 无法运行。</p>
+              </div>
+            </details>
+            <details>
+              <summary>为什么第一次打开需要额外确认？</summary>
+              <div class="answer">
+                <p>
+                  Windows 和 macOS 会对刚从网上下载的应用做一次来源确认。按上面的安装说明点击「仍要运行」或「仍要打开」即可，之后打开不再询问。
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>怎么确认下载的安装包完整？</summary>
+              <div class="answer">
+                <p>对照上方卡片里的 SHA-256 校验值：</p>
+                <p>Windows：在 PowerShell 中运行 <span class="path">Get-FileHash .\Yantu-2.1.21-win-x64.exe</span></p>
+                <p>macOS：在终端中运行 <span class="path">shasum -a 256 ~/Downloads/Yantu-2.1.21-mac-arm64.dmg</span></p>
+                <p>输出的值与页面上一致，说明文件完整。</p>
+              </div>
+            </details>
+            <details>
+              <summary>装好后需要登录账号吗？</summary>
+              <div class="answer">
+                <p>不需要注册研途账号。打开后在「设置 → 模型」添加你的模型服务就能开始使用。</p>
+              </div>
+            </details>
+            <details>
+              <summary>怎么更新和卸载？</summary>
+              <div class="answer">
+                <p>更新：在应用里打开「设置 → 关于」，点击「检查更新」；也可以回到本页下载最新安装包覆盖安装。</p>
+                <p>卸载：Windows 在「设置 → 应用」里找到研途卸载；macOS 把「应用程序」里的研途（Yantu）拖到废纸篓。</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="dark-zone">
+      <section class="final-cta">
+        <div class="container">
+          <h2>从一条消息，到一份交付</h2>
+          <p>下载研途，把咨询、执行与交付放进同一个工作台。</p>
+          <div class="cta-row">
+            <a class="btn btn-light" href="/download/windows" data-dl="auto">
+              <svg aria-hidden="true"><use href="/assets/icons.svg#i-download" /></svg>
+              <span data-dl-label>下载 Windows 版</span>
+            </a>
+            <a class="btn btn-ghost-dark" href="/">了解研途</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <a class="brand" href="/" aria-label="研途首页">
+                <img src="/assets/brand.svg" alt="" width="34" height="34" />
+                <span class="brand-name">研途</span>
+              </a>
+              <p>面向成人学术服务团队的本地优先 AI 工作台，<br />把咨询、执行与交付放进同一条可追踪的工作流。</p>
+            </div>
+            <div class="footer-col">
+              <h4>产品</h4>
+              <a href="/#features">核心能力</a>
+              <a href="/#scenarios">使用场景</a>
+              <a href="/#how">工作方式</a>
+            </div>
+            <div class="footer-col">
+              <h4>下载</h4>
+              <a href="/download/windows">Windows 版</a>
+              <a href="/download/mac">macOS 版</a>
+              <a href="#install">安装说明</a>
+            </div>
+            <div class="footer-col">
+              <h4>支持</h4>
+              <a href="/#faq">常见问题</a>
+              <a href="#release">版本说明</a>
+              <a href="#verify">校验安装包</a>
+            </div>
+          </div>
+          <div class="footer-base">
+            <span>© <span data-year>2026</span> 研途</span>
+            <span>研途桌面版 2.1.21</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

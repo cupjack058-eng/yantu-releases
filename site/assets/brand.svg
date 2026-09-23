@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">研途</title>
+  <desc id="desc">一本展开的书与通向目标的路径，代表学术成长与可靠交付。</desc>
+  <rect x="64" y="64" width="896" height="896" rx="224" fill="#2B4C7E"/>
+  <path d="M242 298C358 270 445 305 512 390V742C441 662 351 628 242 654V298Z" fill="#FFFFFF"/>
+  <path d="M782 298C666 270 579 305 512 390V742C583 662 673 628 782 654V298Z" fill="#FFFFFF" fill-opacity="0.84"/>
+  <path d="M512 742C512 581 572 467 694 389" fill="none" stroke="#F6C453" stroke-width="48" stroke-linecap="round"/>
+  <circle cx="733" cy="350" r="52" fill="#F6C453"/>
+</svg>
