@@ -30,7 +30,7 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="/" aria-label="研途首页">
-          <img src="/assets/brand.svg" alt="" width="34" height="34" />
+          <img src="/assets/brand.svg" alt="" width="30" height="30" />
           <span class="brand-name">研途</span>
         </a>
         <nav class="site-nav" aria-label="主导航">
@@ -46,9 +46,10 @@
     <main id="main">
       <section class="dl-hero">
         <div class="container">
+          <span class="dl-icon"><img src="/assets/brand.svg" alt="" width="96" height="96" /></span>
           <span class="eyebrow">研途桌面版 2.1.21</span>
           <h1>下载研途</h1>
-          <p class="lead">在 Windows 或 Mac 上安装研途，几分钟完成设置，就能把第一条咨询交给它。</p>
+          <p class="lead">在 Windows 或 Mac 上安装研途，<br />几分钟完成设置，就能把第一条咨询交给它。</p>
           <div class="cta-row">
             <a class="btn btn-primary" href="/download/windows" data-dl="auto">
               <svg aria-hidden="true"><use href="/assets/icons.svg#i-download" /></svg>
@@ -60,7 +61,7 @@
         </div>
       </section>
 
-      <section class="section" id="platforms" style="padding-top: clamp(56px, 7vw, 88px)">
+      <section class="section platforms-section" id="platforms">
         <div class="container">
           <div class="platforms">
             <article class="platform" data-platform="windows">
@@ -125,9 +126,9 @@
         </div>
       </section>
 
-      <section class="section" id="install" style="padding-top: 0">
-        <div class="container two-col">
-          <div class="col-head reveal">
+      <section class="section band" id="install">
+        <div class="container grid-12 install">
+          <div class="split-head reveal">
             <span class="eyebrow">安装说明</span>
             <h2>三步装好，<br />首次打开照着做</h2>
             <p>
@@ -167,7 +168,7 @@
         </div>
       </section>
 
-      <section class="section" id="first-run" style="background: var(--paper-2)">
+      <section class="section" id="first-run">
         <div class="container">
           <div class="section-head reveal">
             <span class="eyebrow">装好之后</span>
@@ -199,7 +200,7 @@
         </div>
       </section>
 
-      <section class="section" id="release">
+      <section class="section band" id="release">
         <div class="container">
           <div class="section-head reveal">
             <span class="eyebrow">版本说明</span>
@@ -220,10 +221,10 @@
         </div>
       </section>
 
-      <section class="section" id="faq" style="padding-top: 0">
-        <div class="container">
-          <div class="section-head reveal">
-            <h2>下载与安装常见问题</h2>
+      <section class="section" id="faq">
+        <div class="container grid-12 faq-wrap">
+          <div class="split-head reveal">
+            <h2>下载与安装<br />常见问题</h2>
           </div>
           <div class="faq">
             <details>
@@ -251,8 +252,8 @@
               <summary>怎么确认下载的安装包完整？</summary>
               <div class="answer">
                 <p>对照上方卡片里的 SHA-256 校验值：</p>
-                <p>Windows：在 PowerShell 中运行 <span class="path">Get-FileHash .\Yantu-2.1.21-win-x64.exe</span></p>
-                <p>macOS：在终端中运行 <span class="path">shasum -a 256 ~/Downloads/Yantu-2.1.21-mac-arm64.dmg</span></p>
+                <p>Windows：在 PowerShell 中运行 <span class="path is-code">Get-FileHash .\Yantu-2.1.21-win-x64.exe</span></p>
+                <p>macOS：在终端中运行 <span class="path is-code">shasum -a 256 ~/Downloads/Yantu-2.1.21-mac-arm64.dmg</span></p>
                 <p>输出的值与页面上一致，说明文件完整。</p>
               </div>
             </details>
@@ -294,7 +295,7 @@
           <div class="footer-grid">
             <div class="footer-brand">
               <a class="brand" href="/" aria-label="研途首页">
-                <img src="/assets/brand.svg" alt="" width="34" height="34" />
+                <img src="/assets/brand.svg" alt="" width="30" height="30" />
                 <span class="brand-name">研途</span>
               </a>
               <p>面向成人学术服务团队的本地优先 AI 工作台，<br />把咨询、执行与交付放进同一条可追踪的工作流。</p>

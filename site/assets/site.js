@@ -134,6 +134,24 @@
     revealed.forEach((node) => node.classList.add('is-in'));
   }
 
+  // 首屏界面演示：窗口进入视野后再播放一次，减少动态效果时直接显示终态
+  const demoWindow = document.querySelector('.app-window');
+  const demoThread = document.querySelector('.app-thread');
+  const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (demoWindow && demoThread && 'IntersectionObserver' in window && !reduceMotion) {
+    demoWindow.classList.add('is-armed');
+    const demoObserver = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          demoWindow.classList.add('is-playing');
+          demoObserver.disconnect();
+        }
+      },
+      { threshold: 0.5 }
+    );
+    demoObserver.observe(demoThread);
+  }
+
   document.querySelectorAll('[data-year]').forEach((node) => {
     node.textContent = String(new Date().getFullYear());
   });
