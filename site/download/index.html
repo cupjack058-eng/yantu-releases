@@ -100,6 +100,7 @@
                 <span class="rec">推荐你的系统</span>
               </div>
               <p class="platform-req">Apple 芯片（M1 及更新）· macOS 11 及以上</p>
+              <p class="platform-req">微信、企微首次读取授权尚未支持。<a href="#mac-limitations">请先查看当前 Mac 使用限制</a></p>
               <dl class="spec">
                 <div>
                   <dt>安装包</dt>
@@ -107,12 +108,12 @@
                 </div>
                 <div>
                   <dt>大小</dt>
-                  <dd>451.5 MB</dd>
+                  <dd>451.6 MB</dd>
                 </div>
                 <div>
                   <dt>SHA-256</dt>
                   <dd class="hash">
-                    <code id="sha-mac">15b5abe711502ee56506a930e50ae129c7a4b1fa70b25f992ff65f631fb5779e</code>
+                    <code id="sha-mac">f7f363c59c7ac799553d24a518356945d8fb096ba9ffe71cc84159f435a46fa8</code>
                     <button class="copy-btn" type="button" data-copy="sha-mac">复制</button>
                   </dd>
                 </div>
@@ -123,6 +124,7 @@
             </article>
           </div>
           <p class="dl-note">安装包只包含研途应用本身，首次打开是全新的空白工作台，所有数据都从你自己的使用开始。</p>
+          <div id="mac-limitations"><h3>当前 Mac 使用限制</h3><p>Apple 芯片、macOS 11 及以上的原定支持范围尚未全部满足，已知限制如下。当前直接实测为 M4 / macOS 27.0，其它版本与芯片尚未逐项实测。</p><ul><li>微信、企业微信在没有有效读取授权时，首次建立和失效后的重建尚未满足；反复登录无法解决，研途不会退出或替换官方客户端。</li><li>macOS 11–12 无法运行当前飞书授权浏览器，原定系统支持范围仍有缺口；其它未实测系统和芯片不计为通过。</li><li>当前 Mac 包不提供依赖 Windows Office COM 的 Word、Excel、PowerPoint 版式预览和转换。</li><li>飞书授权后随研途持续读取，当前没有独立的同步暂停开关。</li></ul></div>
         </div>
       </section>
 
@@ -214,8 +216,8 @@
             <ul>
               <li>概览、工作台、设计、收件箱四个主入口：渠道消息与本地文件自动整理成任务，AI 与人工分流执行。</li>
               <li>论文修订、申请材料、数据看板与汇报直接交付为 Word、Excel、PPT，宣发内容按 7 个平台的规矩生成。</li>
-              <li>macOS：修复首次启动和企业微信接入，完善系统授权引导与重启后的连接保持。</li>
-              <li>macOS：修复模型选择、会话复制及图片生成超时，改善收件箱草稿与宣发流程。</li>
+              <li>macOS：微信和企业微信复用已有有效读取授权；权限或资料异常时保留原账号登录状态，并显示具体原因。</li>
+              <li>macOS：飞书改进登录识别、二维码显示和授权保存；取消时释放本次授权浏览器，优化同账号授权续期后的读取恢复。</li>
               <li>支持 OpenRouter 等模型服务，填入自己的 API Key 并选择模型即可使用。</li>
               <li>应用内「设置 → 关于 → 检查更新」对接研途官方发布渠道，新版本发布后可在应用内直接下载。</li>
             </ul>
@@ -233,7 +235,7 @@
               <summary>我的电脑能装吗？</summary>
               <div class="answer">
                 <p>Windows 需要 Windows 10 或 Windows 11 的 64 位系统。Mac 需要 Apple 芯片（M1 及之后的所有 M 系列芯片）并运行 macOS 11 或更高版本。</p>
-                <p>在 Mac 上可以点击左上角苹果菜单 →「关于本机」，看到「芯片：Apple M…」即可安装。</p>
+                <p>在 Mac 上可以点击左上角苹果菜单 →「关于本机」，查看芯片信息；下载前还请核对本页的 Mac 使用限制。</p>
               </div>
             </details>
             <details>
