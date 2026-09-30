@@ -6,7 +6,7 @@
     <title>下载研途 · Windows 与 macOS 桌面版</title>
     <meta
       name="description"
-      content="下载研途桌面版：Mac 2.1.23 测试版、Windows 2.1.21。Windows 10/11（64 位）与 Apple 芯片 Mac（macOS 11 及以上）。附安装说明、首次使用步骤与安装包校验值。"
+      content="下载研途桌面版：Mac 2.1.26 测试版、Windows 2.1.21。Windows 10/11（64 位）与 Apple 芯片 Mac（macOS 11 及以上）。附安装说明、首次使用步骤与安装包校验值。"
     />
     <meta name="theme-color" content="#faf9f5" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -47,7 +47,7 @@
       <section class="dl-hero">
         <div class="container">
           <span class="dl-icon"><img src="/assets/brand.svg" alt="" width="96" height="96" /></span>
-          <span class="eyebrow">Mac 2.1.23 测试版 · Windows 2.1.21</span>
+          <span class="eyebrow">Mac 2.1.26 测试版 · Windows 2.1.21</span>
           <h1>下载研途</h1>
           <p class="lead">在 Windows 或 Mac 上安装研途，<br />几分钟完成设置，就能把第一条咨询交给它。</p>
           <div class="cta-row">
@@ -57,7 +57,7 @@
             </a>
             <a class="btn btn-secondary" href="/download/mac" data-dl="other">下载 macOS 测试版</a>
           </div>
-          <p class="cta-note">Mac 测试版发布于 2026 年 09 月 28 日 01:32:09（北京时间） · <a href="#release">查看版本说明</a></p>
+          <p class="cta-note">Mac 测试版发布于 2026 年 09 月 30 日 10:58:14（北京时间） · <a href="#release">查看版本说明</a></p>
         </div>
       </section>
 
@@ -100,20 +100,20 @@
                 <span class="rec">推荐你的系统</span>
               </div>
               <p class="platform-req">Apple 芯片（M1 及更新）· macOS 11 及以上</p>
-              <p class="platform-req">企微首次读取提供受控初始化；微信首次读取仍有缺口。<a href="#mac-limitations">请先查看当前 Mac 使用限制</a></p>
+              <p class="platform-req">微信、企业微信首次读取由本人主动发起受控初始化；Office 文档使用本机 Microsoft Office。<a href="#mac-limitations">请先查看当前 Mac 使用范围</a></p>
               <dl class="spec">
                 <div>
                   <dt>安装包</dt>
-                  <dd>Yantu-2.1.23-mac-arm64.dmg</dd>
+                  <dd>Yantu-2.1.26-mac-arm64.dmg</dd>
                 </div>
                 <div>
                   <dt>大小</dt>
-                  <dd>859.8 MB</dd>
+                  <dd>452.3 MB</dd>
                 </div>
                 <div>
                   <dt>SHA-256</dt>
                   <dd class="hash">
-                    <code id="sha-mac">f24e4df8438fb53075d945bf21028c140568e36c90300a593908c2784dda71b0</code>
+                    <code id="sha-mac">480f961347d603ee904d9f31296806fa0b0078a7f272091cf64102f30292d19b</code>
                     <button class="copy-btn" type="button" data-copy="sha-mac">复制</button>
                   </dd>
                 </div>
@@ -124,7 +124,7 @@
             </article>
           </div>
           <p class="dl-note">安装包包含研途及运行所需的内嵌组件，首次打开是全新的空白工作台，所有数据都从你自己的使用开始。</p>
-          <div id="mac-limitations"><h3>当前 Mac 使用范围</h3><p>本次供同事测试的版本已在 M4 / macOS 27.0 验证；其它系统、芯片及客户端版本尚未逐项实测。Apple 芯片、macOS 11 及以上的原定支持范围仍有下述缺口。</p><ul><li>企业微信受控初始化须由本人主动发起，会临时退出原版、运行临时副本取得读取材料，随后恢复原版；并非腾讯官方授权流程，不能承诺没有账号风险。本次真实事务已完成读取和研途重启复验，未验证所有 Mac 和企微版本。</li><li>微信没有既有有效读取材料时，首次接入和失效后的重建仍未满足。</li><li>macOS 11–12 无法运行当前飞书授权浏览器；已验证机器上的飞书同步可暂停和恢复。</li><li>Mac 内嵌 LibreOffice 26.2.6，用于文档预览与转换；复杂排版可能与 Microsoft Office 存在差异。</li><li>此安装包使用本地签名，尚未通过 Apple 公证。请按下方正常系统安装提示操作。</li></ul></div>
+          <div id="mac-limitations"><h3>当前 Mac 使用范围</h3><p>本次供同事测试的版本已在 M5 Pro / macOS 27.0 验证；其它系统、芯片及客户端版本尚未逐项实测。Apple 芯片、macOS 11 及以上的原定支持范围仍有下述缺口。</p><ul><li>微信、企业微信的首次读取须由本人主动发起受控初始化：会临时退出原版、运行临时副本取得读取材料，随后恢复原版；并非腾讯官方授权流程，不能承诺没有账号风险。已在微信 4.1.13、企业微信 5.0.11 上完成真实读取、原版恢复与重启复验；读取材料失效后的重新初始化尚未在本版逐项实测。</li><li>macOS 11–12 无法运行当前飞书授权浏览器；已验证机器上的飞书同步可暂停和恢复。</li><li>Word、Excel、PPT 的生成与转换使用本机 Microsoft Office，请先安装 Microsoft Office。Word、PPT 文件在研途内预览暂不显示正文，可直接用 Microsoft Office 打开查看。</li><li>小红书、抖音、知乎等平台需在研途的专用浏览器窗口里登录一次（设置 → 系统 → 自动化浏览器 → 打开浏览器窗口），之后一直沿用，平时在后台运行。</li><li>此安装包使用本地签名，尚未通过 Apple 公证。请按下方正常系统安装提示操作。</li></ul></div>
         </div>
       </section>
 
@@ -151,7 +151,7 @@
             <div class="guide-card reveal">
               <h3><svg aria-hidden="true"><use href="/assets/icons.svg#i-apple" /></svg>macOS</h3>
               <ol class="numbered">
-                <li><span>双击打开 <b>Yantu-2.1.23-mac-arm64.dmg</b>，把 <b>研途（Yantu）</b>拖进「应用程序」文件夹。</span></li>
+                <li><span>双击打开 <b>Yantu-2.1.26-mac-arm64.dmg</b>，把 <b>研途（Yantu）</b>拖进「应用程序」文件夹。</span></li>
                 <li>
                   <span>第一次打开时如果提示无法验证开发者，先点「完成」，再打开<b>「系统设置 → 隐私与安全性」</b>，在页面底部点击<b>「仍要打开」</b>，输入开机密码确认。</span>
                 </li>
@@ -206,20 +206,23 @@
         <div class="container">
           <div class="section-head reveal">
             <span class="eyebrow">版本说明</span>
-            <h2>Mac 2.1.23 测试版</h2>
+            <h2>Mac 2.1.26 测试版</h2>
           </div>
           <div class="release reveal">
             <div class="release-head">
-              <h3>Mac 2.1.23 测试版 · Windows 2.1.21</h3>
-              <time datetime="2026-09-27T17:32:09Z">2026 年 09 月 28 日 01:32:09（北京时间）</time>
+              <h3>Mac 2.1.26 测试版 · Windows 2.1.21</h3>
+              <time datetime="2026-09-30T02:58:14Z">2026 年 09 月 30 日 10:58:14（北京时间）</time>
             </div>
             <ul>
               <li>概览、工作台、设计、收件箱四个主入口：渠道消息与本地文件自动整理成任务，AI 与人工分流执行。</li>
               <li>论文修订、申请材料、数据看板与汇报直接交付为 Word、Excel、PPT，宣发内容按 7 个平台的规矩生成。</li>
-              <li>macOS：企业微信支持主动发起的受控初始化、完整材料校验、原版恢复与后续复用；权限或资料异常时保留原材料并显示具体阶段。</li>
-              <li>macOS：内嵌 LibreOffice，支持 CSV 表格、Word 中文正文、PPT 翻页、Excel 公式重算与多工作表、转换失败后重试；飞书同步支持暂停和恢复。</li>
+              <li>macOS：微信、企业微信支持主动发起的受控初始化、完整材料校验、原版恢复与后续复用；飞书同步支持暂停和恢复。</li>
+              <li>macOS：Word、Excel、PPT 由本机 Microsoft Office 生成与转换。</li>
+              <li>专用浏览器：各平台登录一次后一直沿用并在后台运行；小红书、抖音可按热度抓取帖子与全部评论，整理成 Word 和 Excel。</li>
+              <li>工作台：对话中可继续排队发送，定时任务可保存为技能，文件树搜索覆盖子文件夹，删除资料后相关记忆自动失效。</li>
+              <li>能力页插件市场：可从公开 Claude 插件索引安装技能，在对话中勾选使用。</li>
               <li>支持 OpenRouter 等模型服务，填入自己的 API Key 并选择模型即可使用。</li>
-              <li>旧版研途可在「设置 → 关于」开启测试版更新后检查更新，下载 Mac 2.1.23 测试版；下载中可查看进度并取消。Windows 稳定版保持 2.1.21。</li>
+              <li>旧版研途可在「设置 → 关于」开启测试版更新后检查更新，下载 Mac 2.1.26 测试版；下载中可查看进度并取消。Windows 稳定版保持 2.1.21。</li>
             </ul>
           </div>
         </div>
@@ -257,7 +260,7 @@
               <div class="answer">
                 <p>对照上方卡片里的 SHA-256 校验值：</p>
                 <p>Windows：在 PowerShell 中运行 <span class="path is-code">Get-FileHash .\Yantu-2.1.21-win-x64.exe</span></p>
-                <p>macOS：在终端中运行 <span class="path is-code">shasum -a 256 ~/Downloads/Yantu-2.1.23-mac-arm64.dmg</span></p>
+                <p>macOS：在终端中运行 <span class="path is-code">shasum -a 256 ~/Downloads/Yantu-2.1.26-mac-arm64.dmg</span></p>
                 <p>输出的值与页面上一致，说明文件完整。</p>
               </div>
             </details>
@@ -325,7 +328,7 @@
           </div>
           <div class="footer-base">
             <span>© <span data-year>2026</span> 研途</span>
-            <span>Mac 2.1.23 测试版 · Windows 2.1.21</span>
+            <span>Mac 2.1.26 测试版 · Windows 2.1.21</span>
           </div>
         </div>
       </footer>
